@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>flatdoc with angular</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<link href='bower_components/flatdoc/theme-white/style.css' rel='stylesheet'>
+
+		<script src="bower_components/rave/rave.js"></script>
+	</head>
+	<body>
+		<!-- -->
+		<header class='header'>
+			<div class='left'>
+				<h1 role='flatdoc-title'><a href="#!/" ng-bind="documentName">&nbsp;</a></h1>
+				<nav class="pages">
+					<ul>
+						<li ng-repeat="(path, name) in pages"><a href="#!/{{ path }}" ng-bind="name">&nbsp;</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+		<article role='flatdoc' class='content-root'>
+			<aside class='menubar'>
+				<div class='menu section' role='flatdoc-menu'></div>
+			</aside>
+			<div role='flatdoc-content' class='content'></div>
+		</article>
+
+		<div style="display:none">
+			<div ng-view></div>
+		</div>
+	</body>
+</html>
