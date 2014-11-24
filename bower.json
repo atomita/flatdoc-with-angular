@@ -1,11 +1,11 @@
 {
-  "name": "mddoc",
+  "name": "flatdoc-with-angular",
   "version": "0.0.0",
   "authors": [
     "@ <sleeping.cait.sith+gh@gmail.com>"
   ],
   "main": "main.js",
-  "license": "",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
