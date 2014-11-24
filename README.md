@@ -45,14 +45,14 @@ Document root content.
 ### themeScripts
 
 Scripts for theme.
-value type: array
+- value type: array
 
 ### pages
 
 Set the document to be displayed in the menu.
-value type: object
-key: path
-value: label
+- value type: object
+	- key: path
+	- value: label
 
 
 -------------------------------------
